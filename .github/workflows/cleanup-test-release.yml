@@ -1,0 +1,60 @@
+name: 'cleanup-test-release'
+on:
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'pr to delete assets for'
+        required: true
+  pull_request:
+    types: [closed]
+
+env:
+  version: ci-test-ignore-me-${{ github.event.inputs.pr_number || github.event.number }}
+  edition: xfce
+  SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: delete test-release for closed pr
+        if: always()
+        run: |
+          echo ${{ github.token }} | gh auth login --with-token
+          gh release delete ${{ env.version }} -y --repo ${{ github.repository }}
+          git push --delete origin ${{ env.version }}
+      - name: ssh-prepare
+        if: always()
+        run: |
+          mkdir -p /home/runner/.ssh
+          touch /home/runner/.ssh/github_actions
+          chmod 600 /home/runner/.ssh/github_actions
+          ssh-agent -a /tmp/ssh_agent.sock > /dev/null
+      - name: delete cdn77 test upload
+        if: always()
+        run: |
+          ssh-keyscan -t rsa ${{ secrets.CDN_HOST }} >> /home/runner/.ssh/known_hosts
+          
+          sshpass -p "${{ secrets.CDN_PWD }}" rsync --delete -vaP --stats \
+            -e ssh $(mktemp) ${{ secrets.CDN_USER }}@${{ secrets.CDN_HOST }}:/www/${{ env.edition }}/${{ env.version }}
+      - name: delete sourceforge test upload
+        if: always()
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          ssh-keyscan -t rsa frs.sourceforge.net >> /home/runner/.ssh/known_hosts
+          echo "${{ secrets.SF_PRIV_SSHKEY }}" >> /home/runner/.ssh/github_actions
+          ssh-add /home/runner/.ssh/github_actions
+          rsync --delete -vaP --stats \
+            -e ssh $(mktemp) ${{ secrets.SF_USER_NAME }}@frs.sourceforge.net:/home/frs/project/manjarolinux/${{ env.edition }}/${{ env.version }}
+      - name: delete osdn test upload
+        if: always()
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          ssh-keyscan -t rsa storage.osdn.net >> /home/runner/.ssh/known_hosts
+          echo "${{ secrets.OSDN_PRIV_SSHKEY }}" >> /home/runner/.ssh/github_actions
+          ssh-add /home/runner/.ssh/github_actions
+          rsync --delete -vaP --stats \
+            -e ssh $(mktemp) ${{ secrets.OSDN_USER_NAME }}@storage.osdn.net:/storage/groups/m/ma/manjaro/${{ env.edition }}/${{ env.version }}
