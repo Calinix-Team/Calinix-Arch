@@ -1,6 +1,6 @@
 name: 'build-test'
 on:
-  pull_request:
+  workflow_dispatch:
 
 env:
   ##### EDIT ME #####
