@@ -1,0 +1,56 @@
+name: 'build-test'
+on:
+  pull_request:
+
+env:
+  ##### EDIT ME #####
+  iso-profiles-git: https://github.com/arghyagod-coder/iso-profiles
+  version: ci-test-ignore-me-${{ github.event.number }}
+  ###################
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: delete test-release
+        run: |
+          echo ${{ github.token }} | gh auth login --with-token
+          gh release delete ${{ env.version }} -y --repo ${{ github.repository }} || exit 0
+          git push --delete origin ${{ env.version }}
+  build-release:
+    runs-on: ubuntu-20.04
+    needs: [cleanup]
+    strategy:
+      matrix:
+        ##### EDIT ME #####
+        EDITION: [xfce]
+        BRANCH: [stable]
+        SCOPE: [full]
+        ###################
+    steps:
+      - uses: styfle/cancel-workflow-action@0.9.0
+        with:
+          access_token: ${{ github.token }}
+      - uses: actions/checkout@v2
+      - id: image-build
+        uses: ./
+        with:
+          iso-profiles-repo: ${{ env.iso-profiles-git }}
+          edition: ${{ matrix.edition }}
+          branch: ${{ matrix.branch }}
+          scope: ${{ matrix.scope }}
+          version: ${{ env.version }}
+          release-tag: ${{ env.version }}
+          gpg-secret-key-base64: ${{ secrets.GPG_SECRET_KEY_BASE64 }}
+          gpg-passphrase: 1234
+          cdn77-host: ${{ secrets.CDN_HOST }}
+          cdn77-user: ${{ secrets.CDN_USER }}
+          cdn77-pwd: ${{ secrets.CDN_PWD }}
+          sf-project: manjarolinux
+          sf-user: ${{ secrets.SF_USER_NAME }}
+          sf-key: ${{ secrets.SF_PRIV_SSHKEY }}
+          # osdn is absurdly slow sometimes
+          # osdn-project: manjaro
+          # osdn-user: ${{ secrets.OSDN_USER_NAME }}
+          # osdn-key: ${{ secrets.OSDN_PRIV_SSHKEY }}
