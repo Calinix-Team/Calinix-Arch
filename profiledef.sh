@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="mkOS"
-iso_label="MKOS_$(date +%Y%m)"
-iso_publisher="MkOS Linux <https://github.com/Mengo-Team/MkOS/>"
-iso_application="MkOS DVD"
+iso_name="CalinixOS-Arch"
+iso_label="CalinixOS_$(date +%Y%m)"
+iso_publisher="Calinix Team <https://github.com/Mengo-Team/>"
+iso_application="CalinixOS DVD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')

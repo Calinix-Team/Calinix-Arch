@@ -53,7 +53,7 @@ Presentation
                 anchors.horizontalCenterOffset: 0
                 font.pixelSize: parent.width *.020
                 color: 'white'
-                text: qsTr("<b>Welcome to MkOS, an Arch based distribution to interpret MacOS Monterey<br/>")
+                text: qsTr("<b>Welcome to CalinixOS, an Arch based distribution with a beautiful interface, and professional workflow<br/>")
                 wrapMode: Text.WordWrap
                 width: parent.width / 1.4
                 horizontalAlignment: Text.AlignHCenter
@@ -80,7 +80,7 @@ Presentation
                 anchors.horizontalCenterOffset: 0
                 font.pixelSize: parent.width *.020
                 color: 'white'
-                text: qsTr("<b>MkOS is 100% compatible with Arch Linux<br/>")
+                text: qsTr("<b>CalinixOS is 100% compatible with Arch Linux<br/>")
                 
                 wrapMode: Text.WordWrap
                 width: parent.width / 1.4
@@ -108,7 +108,7 @@ Presentation
                 anchors.horizontalCenterOffset: 0
                 font.pixelSize: parent.width *.020
                 color: 'white'
-                text: qsTr("<b>MkOS brings modernisation to your home in a professional way.<br/>")
+                text: qsTr("<b>CalinixOS brings modernisation to your home in a professional way.<br/>")
                 wrapMode: Text.WordWrap
                 width: parent.width / 1.4
                 horizontalAlignment: Text.AlignHCenter
@@ -135,7 +135,7 @@ Presentation
                 anchors.horizontalCenterOffset: 0
                 font.pixelSize: parent.width *.020
                 color: 'white'
-                text: qsTr("<b>Thank you for trying MkOS, Have fun ;)<br/>")
+                text: qsTr("<b>Thank you for trying CalinixOS, Have fun<br/>")
                 wrapMode: Text.WordWrap
                 width: parent.width / 1.4
                 horizontalAlignment: Text.AlignHCenter

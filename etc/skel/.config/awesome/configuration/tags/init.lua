@@ -10,19 +10,21 @@ local tags = {
 		icon = icons.file_manager,
 		default_app = apps.default.file_manager,
 		gap = beautiful.useless_gap,
-		layout = awful.layout.suit.tile
+		layout = awful.layout.suit.floating
 	},
 	{
 		type = 'internet',
 		icon = icons.web_browser,
 		default_app = apps.default.web_browser,
 		gap = beautiful.useless_gap
+		layout = awful.layout.suit.floating
 	},
 	{
 		type = 'terminal',
 		icon = icons.terminal,
 		default_app = apps.default.terminal,
 		gap = beautiful.useless_gap
+		layout = awful.layout.suit.floating
 	},
 	{
 		type = 'code',

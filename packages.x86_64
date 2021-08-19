@@ -209,10 +209,9 @@ pulseaudio-bluetooth
 pulseaudio-equalizer
 pulseaudio-jack
 quodlibet
-simplescreenrecorder
 sox
 transcode
-vlc
+celluloid
 x265
 x264
 xvidcore
@@ -251,7 +250,6 @@ whois
 
 # Desktop
 aisleriot
-geany
 meld
 neofetch
 papirus-icon-theme
@@ -267,8 +265,14 @@ ttf-carlito
 ttf-caladea
 noto-fonts
 opendesktop-fonts
+gnome-screenshot
 ttf-opensans
 freetype2
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+xorg-mkfontscale
+xf86-input-void
 
 # Printing Support
 cups
@@ -328,11 +332,24 @@ ki18n
 kiconthemes
 kio
 kparts
+virtualbox-guest-utils
 kpmcore
 kservice
 kwidgetsaddons
 libpwquality
 plasma-framework
+xf86-input-vmmouse
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-dummy
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-sisusb
+xf86-video-vesa
+xf86-video-vmware
+xf86-video-voodoo
 polkit-qt5
 python
 qt5ct

@@ -79,7 +79,7 @@ Item {
     property bool keyShortcutsEnabled: true
 
     property color titleColor: textColor;
-    property color textColor: "black"
+    property color textColor: "white"
     property string fontFamily: "Helvetica"
     property string codeFontFamily: "Courier New"
 

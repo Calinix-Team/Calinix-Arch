@@ -18,16 +18,16 @@ KEYMP="us"
 KEYMOD="pc105"
 # pc105 and pc104 are modern standards, all others need to be researched
 
-MYUSERNM="mkos"
+MYUSERNM="calinix"
 # use all lowercase letters only
 
-MYUSRPASSWD="mkos"
+MYUSRPASSWD="calinix"
 # Pick a password of your choice
 
-RTPASSWD="mac"
+RTPASSWD="calinix"
 # Pick a root password
 
-MYHOSTNM="MacOS"
+MYHOSTNM="CalinixOS"
 # Pick a hostname for the machine
 
 # ----------------------------------------

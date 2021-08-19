@@ -1,4 +1,4 @@
-# MkOS custom settings
+# CalinixOS custom settings
 # SPDX-FileCopyrightText: no
 # SPDX-License-Identifier: CC0-1.0
 #
@@ -123,12 +123,12 @@ navigation: widget
 # are set to "true" (they can also be overridden).
 strings:
     productName:         "@{NAME}"
-    shortProductName:    MkOS
+    shortProductName:    CalinixOS
     version:             2021
     shortVersion:        2021
-    versionedName:       MkOS Linux
-    shortVersionedName:  MkOS Linux
-    bootloaderEntryName: MkOS Monterey
+    versionedName:       CalinixOS Linux
+    shortVersionedName:  CalinixOS Linux
+    bootloaderEntryName: CalinixOS
     productUrl:          https://github.com/Mengo-Team/MkOS
 #   supportUrl:          https://github.com/Mengo-Team/MkOS
 #   knownIssuesUrl:      https://github.com/Mengo-Team/MkOS
@@ -166,7 +166,7 @@ images:
     # productBanner:       "banner.png"
     productIcon:         "squid.png"
     productLogo:         "logo.png"
-    productWallpaper:    "wallpaper.png"
+    productWallpaper:    "wallpaper.jpg"
     productWelcome:      "languages.png"
 
 # Colors for text and background components.
