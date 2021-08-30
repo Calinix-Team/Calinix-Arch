@@ -85,7 +85,6 @@ reflector
 reiserfsprogs
 rp-pppoe
 rsync
-xdotool 
 wmctrl
 rxvt-unicode-terminfo
 screen
@@ -266,6 +265,8 @@ opendesktop-fonts
 gnome-screenshot
 ttf-opensans
 freetype2
+
+# Input Drivers
 libinput-gestures
 xf86-input-elographics
 xf86-input-evdev
@@ -337,6 +338,7 @@ kservice
 kwidgetsaddons
 libpwquality
 plasma-framework
+nvidia
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-dummy
