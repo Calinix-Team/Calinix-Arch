@@ -62,7 +62,7 @@ sleep 2
 
 # Requirements and preparation
 prepreqs () {
-pacman -S --noconfirm archlinux-keyring
+pacman -S --noconfirm --needed archlinux-keyring
 pacman -S --needed --noconfirm archiso mkinitcpio-archiso
 }
 
@@ -75,12 +75,12 @@ rm -r ./ezreleng/syslinux
 
 # Copy ezrepo to opt
 cpezrepo () {
-cp -r ./opt/ezrepo /opt/
+cp -r ./opt/calinix /opt/
 }
 
 # Remove ezrepo from opt
 rmezrepo () {
-rm -r /opt/ezrepo
+rm -r /opt/calinix
 }
 
 # Delete automatic login
@@ -119,7 +119,6 @@ cp -r syslinux ./ezreleng/
 cp -r usr ./ezreleng/airootfs/
 cp -r etc ./ezreleng/airootfs/
 cp -r opt ./ezreleng/airootfs/
-ln -sf /usr/share/ezarcher ./ezreleng/airootfs/etc/skel/ezarcher
 }
 
 # Set hostname
@@ -192,7 +191,7 @@ echo "LANG="${LCLST}".UTF-8" > ./ezreleng/airootfs/etc/locale.conf
 
 # Start mkarchiso
 runmkarchiso () {
-mkarchiso -v -w ./work -o ./out ./ezreleng
+sudo mkarchiso -v -w ./work -o ./out ./ezreleng
 }
 
 # ----------------------------------------

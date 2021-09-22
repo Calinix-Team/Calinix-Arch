@@ -17,14 +17,12 @@ local tags = {
 		icon = icons.web_browser,
 		default_app = apps.default.web_browser,
 		gap = beautiful.useless_gap
-		layout = awful.layout.suit.floating
 	},
 	{
 		type = 'terminal',
 		icon = icons.terminal,
 		default_app = apps.default.terminal,
 		gap = beautiful.useless_gap
-		layout = awful.layout.suit.floating
 	},
 	{
 		type = 'code',
@@ -36,8 +34,7 @@ local tags = {
 		type = 'games',
 		icon = icons.games,
 		default_app = apps.default.game,
-		gap = beautiful.useless_gap,
-		layout = awful.layout.suit.floating
+		gap = beautiful.useless_gap
 	},
 	{
 		type = 'graphics',
@@ -64,8 +61,8 @@ local tags = {
 		type = 'any',
 		icon = icons.development,
 		default_app = apps.default.development,
-		gap = beautiful.useless_gap,
-		layout = awful.layout.suit.floating
+		layout = awful.layout.suit.floating,
+		gap = beautiful.useless_gap
 	}
 	-- {
 	--   type = 'social',

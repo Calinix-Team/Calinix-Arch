@@ -42,7 +42,6 @@ irssi
 iw
 iwd
 jfsutils
-kitty-terminfo
 less
 lftp
 libfido2
@@ -116,6 +115,7 @@ xl2tpd
 zsh
 
 # System
+iris-wall-git
 archiso
 base-devel
 cdrtools
@@ -126,10 +126,8 @@ efitools
 fuse2
 fuse3
 git
-gnome-disk-utility
 gnome-keyring
 gparted
-grsync
 grub
 haveged
 htop
@@ -180,6 +178,7 @@ flac
 frei0r-plugins
 gstreamer
 gst-libav
+ttf-roboto
 gst-plugins-base
 gst-plugins-good
 gst-plugins-bad
@@ -232,7 +231,6 @@ avahi
 curl
 dnsutils
 ethtool
-filezilla
 firefox
 gnome-nettool
 modemmanager
@@ -249,8 +247,6 @@ wget
 whois
 
 # Desktop
-aisleriot
-meld
 neofetch
 papirus-icon-theme
 
@@ -291,8 +287,8 @@ python-reportlab
 simple-scan
 system-config-printer
 
-# Mate
-kitty
+# Sys
+alacritty
 ldoc
 xmlto
 lua-filesystem
@@ -308,8 +304,6 @@ noto-fonts-emoji-apple
 ffmpeg
 feh
 inter-font
-mpd
-mpc
 pulseaudio-alsa
 xfce4-power-manager
 iproute2
@@ -332,13 +326,11 @@ ki18n
 kiconthemes
 kio
 kparts
-virtualbox-guest-utils
 kpmcore
 kservice
 kwidgetsaddons
 libpwquality
 plasma-framework
-xf86-input-vmmouse
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-dummy
@@ -348,7 +340,6 @@ xf86-video-nouveau
 xf86-video-openchrome
 xf86-video-sisusb
 xf86-video-vesa
-xf86-video-vmware
 xf86-video-voodoo
 polkit-qt5
 python
@@ -362,6 +353,13 @@ qt5-xmlpatterns
 solid
 upower
 yaml-cpp
+
+# VM 
+qemu-guest-agent
+virtualbox-guest-utils
+open-vm-tools
+xf86-input-vmmouse
+xf86-video-vmware
 
 # Calamares
 calamares

@@ -3,7 +3,7 @@
 
 iso_name="CalinixOS-Arch"
 iso_label="CalinixOS_$(date +%Y%m)"
-iso_publisher="Calinix Team <https://github.com/Mengo-Team/>"
+iso_publisher="Calinix Team <https://github.com/Calinix-Team/>"
 iso_application="CalinixOS DVD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
@@ -22,7 +22,5 @@ file_permissions=(
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/ezmaint"]="0:0:755"
-  ["/usr/share/ezarcher/Scripts/ezarch.bios"]="0:0:755"
-  ["/usr/share/ezarcher/Scripts/ezarch.uefi"]="0:0:755"
-  ["/usr/share/ezarcher/Scripts/ezmaint"]="0:0:755"
+  
 )

@@ -1,0 +1,11 @@
+
+# Build and runtime dependencies for Calamares
+
+Depends:
+kconfig cmake kcoreaddons kiconthemes ki18n kio solid yaml-cpp kpmcore qt5-webengine kwidgetsaddons icu qt5-location boost hwinfo qt5-svg qt5ct polkit-qt5 gtk-update-icon-cache plasma-framework qt5-tools networkmanager python parted doxygen qt5-xmlpatterns squashfs-tools rsync cryptsetup libpwquality dmidecode gptfdisk kparts kdbusaddons kservice upower extra-cmake-modules qt5-translations git
+
+
+# Build local repo
+
+repo-add ./calinix.db.tar.gz calamares-3.2.41.1-1-x86_64.pkg.tar.zst ckbcomp-1.205-1-any.pkg.tar.zst mkinitcpio-openswap-0.1.0-3-any.pkg.tar.zst picom-git-1621_Next.59.g78e8666_2021.08.04-1-x86_64.pkg.tar.zst noto-fonts-emoji-apple-14.5-1-any.pkg.tar.zst yay-git-10.3.1.r37.g5d9e424-1-x86_64.pkg.tar.zst awesome-git-4.3.1086.g13cd20780-1-x86_64.pkg.tar.zst papirus-icon-theme-git-1:20210901.r34.g9acfc69b4e-1-any.pkg.tar.zst iris-wall-git-0.2.0.r1.g807a60b-1-x86_64.pkg.tar.zst
+
