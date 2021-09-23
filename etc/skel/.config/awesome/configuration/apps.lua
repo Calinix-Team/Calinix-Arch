@@ -36,15 +36,9 @@ return {
 		-- Default quake terminal
 		quake = 'alacritty --name QuakeTerminal',
 		-- Default rofi global menu
-		rofi_global = 'rofi -dpi ' .. screen.primary.dpi .. 
-							' -show "Global Search" -modi "Global Search":' .. config_dir .. 
-							'/configuration/rofi/global/rofi-spotlight.sh' .. 
-							' -theme ' .. config_dir ..
-							'/configuration/rofi/global/rofi.rasi',
+		rofi_global = 'rofi -combi-modi window,drun -show combi -modi combi',
 		-- Default app menu
-		rofi_appmenu = 'rofi -dpi ' .. screen.primary.dpi ..
-							' -show drun -theme ' .. config_dir ..
-							'/configuration/rofi/appmenu/rofi.rasi'
+		rofi_appmenu = 'rofi -combi-modi window,drun -show combi -modi combi'
 
 		-- You can add more default applications here
 	},

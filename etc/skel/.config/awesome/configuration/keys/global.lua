@@ -326,14 +326,6 @@ local global_keys = awful.util.table.join(
 	),
 	awful.key(
 		{modkey},
-		'x',
-		function()
-			awesome.emit_signal('widget::blur:toggle')
-		end,
-		{description = 'toggle blur effects', group = 'Utility'}
-	),
-	awful.key(
-		{modkey},
 		']',
 		function()
 			awesome.emit_signal('widget::blur:increase')
