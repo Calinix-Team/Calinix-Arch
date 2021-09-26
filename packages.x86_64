@@ -85,6 +85,8 @@ reflector
 reiserfsprogs
 rp-pppoe
 rsync
+xdotool 
+wmctrl
 rxvt-unicode-terminfo
 screen
 sdparm
@@ -264,6 +266,7 @@ opendesktop-fonts
 gnome-screenshot
 ttf-opensans
 freetype2
+libinput-gestures
 xf86-input-elographics
 xf86-input-evdev
 xf86-input-libinput
@@ -356,6 +359,8 @@ qt5-xmlpatterns
 solid
 upower
 yaml-cpp
+sddm-config-editor-git
+sed
 
 # VM 
 qemu-guest-agent
