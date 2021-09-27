@@ -52,19 +52,10 @@
   packages:
     - brave
     - chromium
-    - dropbox
-    - evolution
-    - filezilla
     - firefox-adblock-plus
     - firefox-i18n-$LOCALE
-    - googlemaps
-    - google-earth-pro
-    - insync
-    - mailspring
-    - nextcloud-client
     - opera
     - qutebrowser
-    - thunderbird
     - vivaldi
     - vivaldi-ffmpeg-codecs
 - name: "Dev Tools"
