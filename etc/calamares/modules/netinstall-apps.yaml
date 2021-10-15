@@ -6,15 +6,12 @@
   expanded: false
   packages:
     - chromium
-    - firefox-developer-edition
-    - brave-bin
-    - google-chrome
-    - librewolf-bin
+    - opera
     - qutebrowser
     - vivaldi
     - vivaldi-ffmpeg-codecs
 - name: "Office"
-  description: "LibreOffice Fresh"
+  description: "LibreOffice "
   critical: false
   hidden: false
   selected: false
@@ -24,3 +21,4 @@
     - libreoffice-fresh-fr
     - hunspell-$LOCALE
     - hunspell-fr
+    - libreoffice-still

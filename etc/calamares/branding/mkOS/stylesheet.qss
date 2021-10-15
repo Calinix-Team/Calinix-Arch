@@ -90,5 +90,5 @@ QPushButton#aboutButton { qproperty-icon: url(:/data/images/release.svg); }
 #licenseItemFullText {  }
 */
 #mainApp { }->setStyleSheet("QLineEdit { color: yellow }");
-QComboBox { background: black; color:white; }
+QComboBox { background: black; }
 QComboBox QAbstractItemView { background: grey; color:blue; }
