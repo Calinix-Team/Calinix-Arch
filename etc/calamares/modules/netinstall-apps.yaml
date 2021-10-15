@@ -1,0 +1,26 @@
+- name: "Browsers"
+  description: "Internet Browsers"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - chromium
+    - firefox-developer-edition
+    - brave-bin
+    - google-chrome
+    - librewolf-bin
+    - qutebrowser
+    - vivaldi
+    - vivaldi-ffmpeg-codecs
+- name: "Office"
+  description: "LibreOffice Fresh"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - libreoffice-fresh
+    - libreoffice-fresh-$LOCALE
+    - libreoffice-fresh-fr
+    - hunspell-$LOCALE
+    - hunspell-fr

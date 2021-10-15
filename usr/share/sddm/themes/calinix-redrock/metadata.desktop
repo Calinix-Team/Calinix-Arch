@@ -1,0 +1,14 @@
+[SddmGreeterTheme]
+Name=ArcoLinux Redrock
+Description=macOS inspired SDDM theme.
+License=CC-BY-SA
+Type=sddm-theme
+Version=1.0
+Author=Astize
+Copyright=(c) 2019, Astize
+Screenshot=screenshot.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=arcolinux-redrock
+Theme-API=2.0
