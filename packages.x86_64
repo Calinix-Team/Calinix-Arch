@@ -1,4 +1,4 @@
-#
+
 # SPDX-License-Identifier: GPL-3.0-or-later
 alsa-utils
 amd-ucode
@@ -133,7 +133,6 @@ grub
 haveged
 htop
 hwdetect
-hwinfo
 libburn
 libisofs
 libisoburn
@@ -292,6 +291,8 @@ simple-scan
 system-config-printer
 
 # Sys
+chaotic-mirrorlist
+chaotic-keyring
 alacritty
 capitaine-cursors
 whitesur-gtk-theme-git
@@ -324,8 +325,8 @@ cmake
 dmidecode
 doxygen
 extra-cmake-modules
-gtk-update-icon-cache
 hwinfo
+gtk-update-icon-cache
 kcoreaddons
 kconfig
 kdbusaddons

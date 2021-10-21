@@ -1,4 +1,4 @@
-rm -rf ../buildiso/*
-cp -r ./* ../buildiso/
-cd ../buildiso
+rm -rf ../isobuild/*
+cp -r ./* ../isobuild/
+cd ../isobuild
 sudo ./steps.sh
