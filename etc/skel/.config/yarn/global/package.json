@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "neovim": "^4.10.0",
+    "tree-sitter-cli": "^0.20.0"
+  }
+}

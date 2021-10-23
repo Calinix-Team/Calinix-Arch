@@ -116,7 +116,6 @@ xl2tpd
 zsh
 
 # System
-iris-wall-git
 archiso
 base-devel
 cdrtools
@@ -308,7 +307,6 @@ gedit
 rofi
 picom-git
 yay-git
-noto-fonts-emoji-apple
 ffmpeg
 feh
 inter-font
@@ -377,3 +375,8 @@ calamares
 ckbcomp
 mkinitcpio-openswap
 
+# LunarVim
+yarn
+npm
+neovim
+python-pynvim

@@ -1,2 +1,2 @@
-# India
-Server = https://get.calinix.tech/calinix_repo/x86_64
+# US
+Server = https://get.calinix.tech/calinix_repo/$arch/
