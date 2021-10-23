@@ -163,7 +163,7 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 
-# Multimedia
+# Audio/Videp
 alsa-plugins
 alsa-firmware
 asunder
@@ -245,7 +245,10 @@ r8168
 wget
 whois
 
-# Desktop
+# Terminal
+alacritty
+alacritty themes
+
 neofetch
 papirus-icon-theme
 
@@ -289,13 +292,18 @@ python-reportlab
 simple-scan
 system-config-printer
 
-# Sys
+# Chaotic-AUR 
 chaotic-mirrorlist
 chaotic-keyring
-alacritty
+
+# Desktop 
+## Theming 
 capitaine-cursors
 whitesur-gtk-theme-git
 whitesur-icon-theme-git
+
+
+## Calinix Interface
 ldoc
 xmlto
 lua-filesystem
