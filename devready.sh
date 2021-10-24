@@ -25,7 +25,8 @@ pacman-key --lsign-key 3056513887B78AEB
 
 echo "Getting the latest chaotic mirrorlist"
 
-pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm
+sudo cp etc/pacman.d/chaotic-mirrorlist /etc/pacman.d/chaotic-mirrorlist
 
 echo '
 [arcolinux_repo_3party]
