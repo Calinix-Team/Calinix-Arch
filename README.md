@@ -58,17 +58,17 @@ Currently we are working on external applications, as we have nearly completed t
 
 6. **How much resources does this take?**
 
-- In our VMs it has recorded a usage of 600mb RAM only with Alacritty open. It's a very light distribution suitable for even computers with 2GB RAM. It's minimal to CPU too. Your dual cores can handle it easy.
+- In our VMs it has recorded a usage of 400mb RAM only with Alacritty open. It's a very light distribution suitable for even computers with 2GB RAM. It's minimal to CPU too. Your dual cores can handle it easy.
 
 **Need more questions in the list? Mail us at arghyasarkar.nolan@gmail.com or join our discord server**
 
 ## Using Calinix
 
-You can try out [Calinix Alpha 5-3c](https://github.com/Calinix-Team/Calinix-Arch/releases/tag/0.5-3c) pre-release as of now.
+You can try out [Calinix Alpha 5 Stable](https://github.com/Calinix-Team/Calinix-Arch/releases/tag/0.5-M) pre-release as of now.
 
 ### Running on Local Hardware
 
-- Download the [ISO](https://github.com/Calinix-Team/Calinix-Arch/releases/download/0.5-3c/CalinixOS-Arch-2021.09.24-x86_64.iso)
+- Download the [ISO](https://drive.google.com/file/d/1U8eTFyoYxjzBLMUtMoEzBDAFUp3rNR3g/view?usp=sharing)
 
 - Burn the ISO to a USB Stick with tools like [Etcher](https://etcher.io), Rufus or Ventoy
 
