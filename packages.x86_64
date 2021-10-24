@@ -247,7 +247,7 @@ whois
 
 # Terminal
 alacritty
-alacritty themes
+alacritty-themes
 
 neofetch
 papirus-icon-theme
@@ -301,7 +301,7 @@ chaotic-keyring
 capitaine-cursors
 whitesur-gtk-theme-git
 whitesur-icon-theme-git
-
+lxappearance
 
 ## Calinix Interface
 ldoc
@@ -388,3 +388,4 @@ yarn
 npm
 neovim
 python-pynvim
+arcolinux-keyring
