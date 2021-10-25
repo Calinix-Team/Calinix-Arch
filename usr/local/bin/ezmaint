@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# ezarcher maintenance
-# Revision: 2021.08.10 -- by eznix (https://sourceforge.net/projects/ezarch/)
+# Calinix maintenance
+# -- by Arghya Sarkar (https://github.com/arghyagod-coder)
 # (GNU/General Public License version 3.0)
 #
 #
@@ -22,13 +22,13 @@ welcomer () {
   clear
   echo "==================================================="
   echo "=                                                 ="
-  echo "=     EZArcher Maintenance Script                 ="
+  echo "=     Calinix Maintenance Script                 ="
   echo "=                                                 ="
   echo "=                                                 ="
   echo "=     Version 2.1  (Release)                      ="
   echo "=                                                 ="
-  echo "=     Brought to you by eznix                     ="
-  echo "=     https://sourceforge.net/projects/ezarch/    ="
+  echo "=     Brought to you by Arghya Sarkar             ="
+  echo "  https://github.com/Calinix-Team/Calinix-Arch    ="
   echo "=                                                 ="
   echo -e "=================================================== \n"
   sleep 4
@@ -135,7 +135,7 @@ mainmenu () { while true
 do
   clear
   echo "-------------------------------------"
-  echo " EZArcher Maintenance Script"
+  echo " Calinix Maintenance Script"
   echo "-------------------------------------"
   echo ""
   echo "  1) Failed systemd services"
@@ -185,20 +185,4 @@ mainmenu
 #
 #
 done
-#
-#
-# Disclaimer:
-#
-# THIS SOFTWARE IS PROVIDED BY EZNIX “AS IS” AND ANY EXPRESS OR IMPLIED
-# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
-# EVENT SHALL EZNIX BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
-# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
-# IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-# POSSIBILITY OF SUCH DAMAGE.
-#
-# END
 #
