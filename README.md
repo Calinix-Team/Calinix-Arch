@@ -86,3 +86,14 @@ NOTE: CalinixOS Uses Picom as compositor which doesn't quite go well in a VMs.
 
 - After booting the OS, you will notice a pretty laggy performance due to picom. To avoid this, launch the terminal (Super+X) and run `killall picom`. Your performance should be boosted. For continuity in similar performance, disable picom to start up by unchecking the line `awful.util.spawn_with_shell("picom &")` in `~/.config/awesome/rc.lua`
 
+## Extra Credits
+
+#### The following people are to be highly appreciated as they have become a great contribution in CalinixOS and its development process
+
+- [**Gerome Matilla**](https://github.com/manilarome/)- His awesomewm configs in [the glorious dotfiles](https://github.com/manilarome/the-glorious-dotfiles) have made up to being a base in CalinixOS for us to build our awesome configurations. It's literally one of the most beautiful ones we have seen and appreciate him for this great work.
+
+- [**Eznix**](https://www.youtube.com/channel/UCQrSHD-tv9nkssrD4nNGcMw)- His [ezarcher](https://sourceforge.net/projects/ezos/files/ezarcher) templates are the ones we use in Calinix, which smoothen our workflow and make stuff fast to develop. He has pretty awesome projects he has worked hard on.  We love ezarcher and will continue to support it in future. He's been supportive and helpful from the very beginning and we highly appreciate what he has done for ezarcher.
+
+- [**Erik Dubois and other ArcoLinux Team**](https://arcolinux.com)- The ArcoLinux discord server and Erik and his team are awesome, can't explain their contribution in words. Anywhere doubt-solving, and they were ready, Arco is already an awesome project, and recently we added ArcoLinux Repositories to Calinix. Now Calinix is heavily based of Arco. Great people, great project, great distro. (I use Arco BTW)
+
+- [**Vinceliuice**](https://github.com/vinceliuice/)- His whitesur themes are used in Calinix, and we love the themes, it adds extra beauty to calinix and has a different level feeling. We appreciate him highly for making such beautiful themes.
