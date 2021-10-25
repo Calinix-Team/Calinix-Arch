@@ -663,7 +663,7 @@ If a package you want to include is in the AUR, follow the given steps:
 
 ## Building the iso
 
-After you make your necessary changes, just run [steps.sh](./steps.sh) file and wait till the iso builds.
+After you make your necessary changes, just run [devready.sh](./devready.sh) and then [steps.sh](./steps.sh) file and wait till the iso builds.
 
 The iso will be in a newly created /out folder
 
