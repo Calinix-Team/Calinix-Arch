@@ -304,6 +304,11 @@ whitesur-icon-theme-git
 lxappearance
 
 ## Calinix Interface
+calinix-desktop-git
+iris-bin
+calinix-iris-git
+calinix-rofi-git
+calinix-alacritty-git
 ldoc
 xmlto
 lua-filesystem
@@ -367,7 +372,9 @@ qt5-webengine
 qt5-xmlpatterns
 solid
 upower
+python-yaml
 yaml-cpp
+libyaml
 sddm-config-editor-git
 sed
 
@@ -389,3 +396,12 @@ npm
 neovim
 python-pynvim
 arcolinux-keyring
+
+# Zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+zsh-theme-powerlevel10k
+bat
+lolcat
+exa
+doas
