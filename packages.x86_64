@@ -386,6 +386,7 @@ xf86-input-vmmouse
 xf86-video-vmware
 
 # Calamares
+calinix-calamares
 calamares
 ckbcomp
 mkinitcpio-openswap
@@ -405,3 +406,6 @@ bat
 lolcat
 exa
 doas
+
+# Performance
+ananicy

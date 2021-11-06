@@ -106,6 +106,7 @@ ln -sf /usr/lib/systemd/system/NetworkManager.service ./ezreleng/airootfs/etc/sy
 ln -sf /usr/lib/systemd/system/NetworkManager-dispatcher.service ./ezreleng/airootfs/etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service
 ln -sf /usr/lib/systemd/system/sddm.service ./ezreleng/airootfs/etc/systemd/system/display-manager.service
 ln -sf /usr/lib/systemd/system/haveged.service ./ezreleng/airootfs/etc/systemd/system/sysinit.target.wants/haveged.service
+ln -sf /usr/lib/systemd/system/ananicy.service ./ezreleng/airootfs/etc/systemd/system/sysinit.target.wants/ananicy.service
 }
 
 # Copy files to customize the ISO
