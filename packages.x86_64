@@ -305,7 +305,6 @@ lxappearance
 ## Calinix Interface
 calinix-desktop-git
 iris-bin
-calinix-bash-git
 calinix-iris-git
 calinix-rofi-git
 calinix-alacritty-git
