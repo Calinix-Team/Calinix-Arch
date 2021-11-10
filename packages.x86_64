@@ -33,7 +33,6 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-grml-zsh-config
 hdparm
 intel-ucode
 ipw2100-fw
@@ -306,6 +305,7 @@ lxappearance
 ## Calinix Interface
 calinix-desktop-git
 iris-bin
+calinix-bash-git
 calinix-iris-git
 calinix-rofi-git
 calinix-alacritty-git
@@ -399,6 +399,7 @@ python-pynvim
 arcolinux-keyring
 
 # Zsh
+calinix-zsh-git
 zsh-autosuggestions
 zsh-syntax-highlighting
 zsh-theme-powerlevel10k
