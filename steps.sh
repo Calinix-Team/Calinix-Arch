@@ -191,7 +191,7 @@ echo "LANG="${LCLST}".UTF-8" > ./ezreleng/airootfs/etc/locale.conf
 
 # Start mkarchiso
 runmkarchiso () {
-sudo mkarchiso -v -w ./work -o ./out ./ezreleng
+mkarchiso -v -w ./work -o ./out ./ezreleng
 }
 
 # ----------------------------------------
