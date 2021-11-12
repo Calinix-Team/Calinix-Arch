@@ -36,5 +36,5 @@ jobs:
       - run: cd ../isobuild/out && ls && pwd
       - run: pacman -S --noconfirm github-cli
       - run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
-      - run: gh release create v0.6.${{ GITHUB_RUN_NUMBER }} ../buildiso/out/"
+      - run: gh release create v0.6.${{ github.GITHUB_RUN_NUMBER }} ../buildiso/out/*
       - run: echo "Building done"
