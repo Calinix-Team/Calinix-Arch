@@ -34,3 +34,11 @@ jobs:
       - run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
       - run: gh release create v0.6.${{ github.GITHUB_RUN_NUMBER }} out/*
       - run: echo "Building done"
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Alpha Regular Release ${{ github.run_number }}"
+          files: |
+            out/*
