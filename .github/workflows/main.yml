@@ -34,12 +34,12 @@ jobs:
       - run: mkdir ../isobuild
       - run: bash start.sh
       - run: cd ../isobuild/out && ls && pwd
-      - run: cd ../isobuild
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
+      - run: cd ..
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          files: ./isobuild/out/Calinix-Arch*
-          token: ${{ secrets.GITHUB_TOKEN }}
-        env:
-          GITHUB_REPOSITORY: Calinix-Team/Calinix-Arch
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Alpha Reg Build"
+          files: |
+            isobuild/out/*
