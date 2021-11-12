@@ -31,8 +31,6 @@ jobs:
       - run: bash devready.sh
       - run: bash steps.sh
       - run: pacman -S --noconfirm github-cli
-      - run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
-      - run: gh release create v0.6.${{ github.GITHUB_RUN_NUMBER }} out/*
       - run: echo "Building done"
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
