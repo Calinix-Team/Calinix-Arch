@@ -26,15 +26,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: ls 
-      - run: pacman -Sy; pacman --noconfirm -S git
-      - run: git clone https://github.com/shashankx86/Calinix-Arch
-      - run: cd Calinix-Arch
+      - run: pacman -Sy; pacman --noconfirm -S git wget curl
       - run: pacman-key --init
       - run: bash devready.sh
-      - run: mkdir ../isobuild
-      - run: bash start.sh
-      - run: cd ../isobuild/out && ls && pwd
+      - run: bash steps.sh
       - run: pacman -S --noconfirm github-cli
       - run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
-      - run: gh release create v0.6.${{ github.GITHUB_RUN_NUMBER }} ../buildiso/out/*
+      - run: gh release create v0.6.${{ github.GITHUB_RUN_NUMBER }} out/*
       - run: echo "Building done"
