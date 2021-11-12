@@ -1,0 +1,45 @@
+name: Calinix Build ISO 
+
+on:
+  push:
+    branches:
+      - master
+      - main # In case we adopt this convention in the future
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - '**.editorconfig'
+      - '**.gitignore'
+      - '**.md'
+      - 'LICENSE'
+      - 'PKGBUILD'
+  release:
+    types:
+      - created
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest
+      options: --privileged
+    steps:
+      - uses: actions/checkout@v2
+      - run: ls 
+      - run: pacman -Sy; pacman --noconfirm -S git
+      - run: git clone https://github.com/shashankx86/Calinix-Arch
+      - run: cd Calinix-Arch
+      - run: pacman-key --init
+      - run: bash devready.sh
+      - run: mkdir ../isobuild
+      - run: bash start.sh
+      - run: cd ../isobuild/out && ls && pwd
+      - run: cd ../isobuild
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: ./isobuild/out/Calinix-Arch*
+          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_REPOSITORY: Calinix-Team/Calinix-Arch
