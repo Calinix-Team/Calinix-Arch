@@ -39,4 +39,4 @@ jobs:
           prerelease: true
           title: "Alpha Regular Release ${{ github.run_number }}"
           files: |
-            out/* 
+            out/*
