@@ -1,0 +1,17 @@
+root:x:0:root
+sys:x:3:calinix
+adm:x:4:calinix
+wheel:x:10:calinix
+log:x:19:calinix
+network:x:90:calinix
+floppy:x:94:calinix
+scanner:x:96:calinix
+power:x:98:calinix
+rfkill:x:850:calinix
+users:x:985:calinix
+video:x:860:calinix
+storage:x:870:calinix
+optical:x:880:calinix
+lp:x:840:calinix
+audio:x:890:calinix
+calinix:x:1010:

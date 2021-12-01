@@ -1,0 +1,1 @@
+sed -i '4d' /etc/sddm.conf.d/kde_settings.conf

@@ -1,0 +1,69 @@
+name: Calinix Build ISO (Release)
+on:
+  workflow_dispatch:
+    inputs:
+      rel:
+        description: 'Enter Release Title:'     
+        required: true
+        default: 'None'
+      prerelease:
+        description: 'Prerelease:'     
+        required: true
+        default: 'False'
+      rel_y-n: 
+        description: 'Make Release:'     
+        required: true
+        default: 'False'
+      arti_y-n:
+        description: 'Uplaod Artifact:'     
+        required: true
+        default: 'True'
+  push:
+    branches:
+      - master
+      - main # In case we adopt this convention in the future
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - '**.editorconfig'
+      - '**.gitignore'
+      - '**.md'
+      - 'LICENSE'
+      - 'PKGBUILD'
+  release:
+    types:
+      - created
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest
+      options: --privileged
+    steps:
+      - uses: actions/checkout@v2
+      - run: ls 
+      - run: pacman -Sy
+      - run: pacman-key --init
+      - run: bash devready.sh
+      - run: bash steps.sh
+      - run: echo "Building done"
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Calinix ISO x86_64
+          path: out/*
+      
+#   Release:
+#     needs: build
+#     if: ${{ github.event.inputs.rel_y-n == 'True' }}
+#     runs-on: ubuntu-latest
+#     steps:
+#       #Release
+#       - uses: "marvinpinto/action-automatic-releases@latest"
+#         with:
+#           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+#           automatic_release_tag: "latest"
+#           prerelease: "${{ github.event.inputs.prerelease }}"
+#           title: "${{ github.event.inputs.rel }}"
+#           files: |
+#             out/*

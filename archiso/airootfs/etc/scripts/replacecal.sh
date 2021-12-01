@@ -1,0 +1,1 @@
+sed -i 's/awful.util.spawn_with_shell("echo \'calinix\' | sudo -S calamares &")/-- End/g' etc/skel/.config/awesome/rc.lua 
