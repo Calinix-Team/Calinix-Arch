@@ -43,7 +43,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: ls 
-      - run: pacman -Sy wget git
+      - run: pacman -Sy wget git --noconfirm
       - run: pacman-key --init
       - run: bash devready.sh
       - run: bash build.sh
