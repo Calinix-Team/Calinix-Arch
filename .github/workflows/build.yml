@@ -1,4 +1,4 @@
-name: Calinix Build ISO (Release)
+name: CalinixOS Alpha 6 Dev ISO (Release)
 on:
   workflow_dispatch:
     inputs:
@@ -46,7 +46,7 @@ jobs:
       - run: pacman -Sy
       - run: pacman-key --init
       - run: bash devready.sh
-      - run: bash steps.sh
+      - run: bash build.sh
       - run: echo "Building done"
       - uses: actions/upload-artifact@v2
         with:
