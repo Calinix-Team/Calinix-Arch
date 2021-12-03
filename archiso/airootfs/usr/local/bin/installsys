@@ -1,0 +1,1 @@
+pkexec --disable-internal-agent "/usr/bin/calamares" "$@"
