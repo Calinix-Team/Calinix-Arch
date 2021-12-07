@@ -39,9 +39,6 @@ ex ()
 
 export EDITOR="vim"
 
-# Launch Calamares (live boot)
-alias installsys='pkexec --disable-internal-agent "/usr/bin/calamares" "$@"'
-
 alias doas='doas --'
 
 # alias nano="vim"
