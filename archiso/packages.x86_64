@@ -369,7 +369,7 @@ libpwquality
 plasma-framework
 
 ## Drivers
-nvidia
+nvidia-dkms
 nvidia-utils
 xf86-video-amdgpu
 xf86-video-ati
