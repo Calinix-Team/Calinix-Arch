@@ -25,5 +25,5 @@ file_permissions=(
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/calmaint"]="0:0:755"
   ["/usr/local/bin/installsys"]="0:0:755"
-  ["/usr/local/bin/virtdown"]="0:0:755"  
+  ["/usr/local/bin/virtdown"]="0:0:755"
 )
