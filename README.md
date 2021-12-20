@@ -16,11 +16,11 @@ We want your workflow to be as smooth and flawless as possible, hence we build o
 
 ### Design
 "If a diamond can't attract, It's worthless"
-When we also believe in powerful desktops, we equally believe in polished, beautiful frontend that make your eyes fall in love. If your desktop looks good, you work more efficiently and pleasantly.
+While we also believe in powerful desktops, we equally believe in polished, beautiful frontend that make your eyes fall in love. If your desktop looks good, you work more efficiently and pleasantly.
 
 ## Contribution:
 
-Currently we need more developers! You can find the contributing guidelines in [CONTRIBUTING.MD](./CONTRIBUTING.md)
+Currently we need more developers! You can find the contributing guidelines at [CONTRIBUTING.MD](./CONTRIBUTING.md)
 
 ### Currently Needed Developers with either one of these skills:
 
@@ -38,7 +38,7 @@ Currently we are working on external applications, as we have nearly completed t
 
 1. **Why do I make this distribution?**
 
-- For fun, learning and as a hobby. I like making distributions. But yeah it has some other reasons too. Currently it's a hobby project. I've seen people getting scared of the keyboard and all, while some others just wanna settle on some keyboard-centric distribution/OS by default. Calinix is for both of the users. It has a Desktop Environment-like interface with the poweer and taste of a window manager. Less bloat, Less weight, More Efficiency, More Beauty.
+- For fun, learning and as a hobby. I like making distributions. But yeah it has some other reasons too. Currently it's a hobby project. I've seen people getting scared of the keyboard and all, while some others just wanna settle on some keyboard-centric distribution/OS by default. Calinix is for both of the users. It has a Desktop Environment-like interface with the power and taste of a window manager. Less bloat, Less weight, More Efficiency, More Beauty.
 
 2. **Why should I use Linux if I have windows or Mac already?**
 
