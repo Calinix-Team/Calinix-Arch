@@ -288,14 +288,14 @@ python-reportlab
 simple-scan
 system-config-printer
 
-# Chaotic-AUR 
+# Chaotic-AUR
 chaotic-mirrorlist
 chaotic-keyring
 
-# Desktop 
-## Theming 
+# Desktop
+## Theming
 capitaine-cursors
-whitesur-gtk-theme-git
+colloid-gtk-theme-git
 whitesur-icon-theme-git
 lxappearance
 
