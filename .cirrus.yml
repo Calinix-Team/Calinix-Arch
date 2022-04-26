@@ -1,0 +1,21 @@
+env:
+    # Cirrus Specific Vars (Do *NOT* Change)
+    CIRRUS_SHELL: bash
+    
+task:
+  name: "Build Calinix ISO"
+  timeout_in: 120m
+  container:
+      image: archlinux/archlinux:latest
+      cpu: 8
+      memory: 20G
+      
+  Build:
+      - pacman -Sy wget git --noconfirm
+      - pacman-key --init
+      - curl -sL https://raw.githubusercontent.com/Calinix-Team/Calinix-Arch/master/devready.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Calinix-Team/Calinix-Arch/master/build.sh | bash
+  Upload:
+      - export TIMEOUT=43200
+      - curl -sL $OUTFILE https://git.io/file-transfer | sh
+      - ./transfer wet out/*
