@@ -10,8 +10,8 @@
 pacman -S wget --noconfirm --needed
 
 echo "Getting the ArcoLinux keys from the ArcoLinux repo"
-wget https://github.com/arcolinux/arcolinux_repo/raw/master/x86_64/arcolinux-keyring-20230919-6-any.pkg.tar.zst -O /tmp/arcolinux-keyring-20230919-6-any.pkg.tar.zst
-pacman -U --noconfirm --needed /tmp/arcolinux-keyring-20230919-6-any.pkg.tar.zst
+wget https://github.com/arcolinux/arcolinux_repo/raw/master/x86_64/arcolinux-keyring-20251209-3-any.pkg.tar.zst -O /tmp/arcolinux-keyring-20251209-3-any.pkg.tar.zst
+pacman -U --noconfirm --needed /tmp/arcolinux-keyring-20251209-3-any.pkg.tar.zst
 
 echo "Getting the latest arcolinux mirrors file"
 
